@@ -1,1 +1,1 @@
- @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=rts.ch
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js^$domain=rts.ch
