@@ -12,6 +12,7 @@
 // @grant          GM_getResourceURL
 // @updateURL      https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/gmail.js
 // @downloadURL    https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/gmail.js
+// @license        MIT
 // ==/UserScript==
 (function () {
     const text = 'Consulter votre messagerie maintenant'
