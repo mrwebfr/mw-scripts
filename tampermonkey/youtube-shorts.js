@@ -2,7 +2,7 @@
 // @name           Youtube Shorts Blocker
 // @author         Mrweb.fr
 // @namespace      https://www.anosher.com/
-// @version        1.0.0
+// @version        1.0.1
 // @description    It Blocks Youtube Shorts
 // @match          https://www.youtube.com/*
 // @updateURL      https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-shorts.js
