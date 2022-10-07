@@ -3,7 +3,6 @@
 // @author         Mrweb.fr
 // @version        1.0.1
 // @description    Infinite loop that checks POP3 protocol mails
-// @license MIT
 // @match          https://mail.google.com/mail/u/0/*
 // @run-at         document-end
 // @grant          GM_getResourceText
