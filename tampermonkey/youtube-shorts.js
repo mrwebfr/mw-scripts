@@ -13,44 +13,42 @@
 
 (function () {
     "use strict";
-
-    // Your code here...
-
+    
     let delay = 1000; //1000 = 1 sec
-
-  //removes shorts from side panel
-  setTimeout(() => {
-    let element = document.querySelectorAll("#endpoint");
-    let nonExistentFirstElement = element[2];
-    if (nonExistentFirstElement) nonExistentFirstElement.remove();
-  }, delay * 2);
-
-  function removeShortsVideos() {
-    let output = [];
-    let regex = /\/shorts\/*/g;
-    for (let i of document.querySelectorAll("*")) {
-      if (regex.test(i.href)) {
-        output.push(i);
-        var bruh = i.parentElement;
-        bruh.parentElement.remove();
-      }
+    
+    //removes shorts from side panel
+    setTimeout(() => {
+        let element = document.querySelectorAll("#endpoint");
+        let nonExistentFirstElement = element[2];
+        if (nonExistentFirstElement) nonExistentFirstElement.remove();
+    }, delay * 2);
+    
+    function removeShortsVideos() {
+        let output = [];
+        let regex = /\/shorts\/*/g;
+        for (let i of document.querySelectorAll("*")) {
+            if (regex.test(i.href)) {
+                output.push(i);
+                var bruh = i.parentElement;
+                bruh.parentElement.remove();
+            }
+        }
     }
-  }
-
-  function redirectShorts() {
-    let shortsPlayer = document.getElementById("shorts-player");
-    let shortsPlayerParent;
-    if (shortsPlayer) shortsPlayerParent = shortsPlayer.parentElement;
-    if (shortsPlayerParent != undefined || null) { }
-  }
-
-  function removeShorts() {
-    removeShortsVideos();
-
-    redirectShorts();
-  }
-
-  var interval = setInterval(function () {
-    removeShorts();
-  }, delay);
+    
+    function redirectShorts() {
+        let shortsPlayer = document.getElementById("shorts-player");
+        let shortsPlayerParent;
+        if (shortsPlayer) shortsPlayerParent = shortsPlayer.parentElement;
+        if (shortsPlayerParent != undefined || null) { }
+    }
+    
+    function removeShorts() {
+        removeShortsVideos();
+        
+        redirectShorts();
+    }
+    
+    var interval = setInterval(function () {
+        removeShorts();
+    }, delay);
 })();
