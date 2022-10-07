@@ -1,3 +1,10 @@
+!!!
+!!! rts.ch
+!!!
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js^$domain=rts.ch
+
+!!!
+!!! creditmutuel.fr
+!!!
 creditmutuel.fr#$##cookieLB { display: none !important; }
-_creditmutuel.fr#@##cookieModal
+! creditmutuel.fr#@##cookieModal
