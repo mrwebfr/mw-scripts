@@ -1,2 +1,3 @@
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js^$domain=rts.ch
 creditmutuel.fr#@##cookieModal
+creditmutuel.fr#$##cookieLB { display: none !important; }
