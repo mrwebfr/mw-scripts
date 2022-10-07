@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Gmail POP3 Auto Check
 // @author         Mrweb.fr
-// @version        1.0.0
+// @version        1.0.1
 // @description    Infinite loop that checks POP3 protocol mails
 // @license MIT
 // @match          https://mail.google.com/mail/u/0/*
