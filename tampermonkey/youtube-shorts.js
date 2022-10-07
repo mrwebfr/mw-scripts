@@ -5,8 +5,8 @@
 // @version        1.0.0
 // @description    It Blocks Youtube Shorts
 // @match          https://www.youtube.com/*
-// @updateURL      https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/gmail.js
-// @downloadURL    https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/gmail.js
+// @updateURL      https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-shorts.js
+// @downloadURL    https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-shorts.js
 // @license      MIT
 // ==/UserScript==
 /* jshint esversion: 6 */
