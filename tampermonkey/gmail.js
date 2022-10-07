@@ -5,7 +5,13 @@
 // @description    Infinite loop that checks POP3 protocol mails
 // @license MIT
 // @match          https://mail.google.com/mail/u/0/*
-// @grant          none
+// @run-at         document-end
+// @grant          GM_getResourceText
+// @grant          GM_addStyle
+// @grant          GM_xmlhttpRequest
+// @grant          GM_getResourceURL
+// @updateURL      https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/gmail.js
+// @downloadURL    https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/gmail.js
 // ==/UserScript==
 (function () {
     const text = 'Consulter votre messagerie maintenant'
