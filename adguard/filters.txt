@@ -4,3 +4,6 @@
 !!! creditmutuel.fr
 creditmutuel.fr#$##cookieLB { display: none !important; }
 ! creditmutuel.fr#@##cookieModal
+
+!!! WP Plugin RGPD - Fix
+@@||*/wp-content/plugins/ct-ultimate-gdpr/assets/*
