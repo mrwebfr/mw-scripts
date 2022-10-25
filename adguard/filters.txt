@@ -1,9 +1,11 @@
-!!! rts.ch
+!!! Fix - rts.ch
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js^$domain=rts.ch
 
-!!! creditmutuel.fr
+
+!!! Fix - creditmutuel.fr
 creditmutuel.fr#$##cookieLB { display: none !important; }
 ! creditmutuel.fr#@##cookieModal
 
-!!! WP Plugin RGPD - Fix
+
+!!! Fix - WP Plugin RGPD
 @@||*/wp-content/plugins/ct-ultimate-gdpr/assets/*
