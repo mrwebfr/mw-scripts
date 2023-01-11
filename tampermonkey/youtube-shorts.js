@@ -1,52 +1,32 @@
 // ==UserScript==
-// @name           Youtube Shorts Blocker
-// @author         Mrweb.fr
-// @version        1.0.1
-// @description    It Blocks Youtube Shorts
-// @match          https://www.youtube.com/*
-// @updateURL      https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-shorts.js
-// @downloadURL    https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-shorts.js
+// @name         Remove YouTube Shorts
+// @namespace    https://github.com/mrwebfr
+// @version      1.0
+// @description  Removes YouTube Shorts Videos
+// @author       mrweb
+// @match        https://www.youtube.com/*
+// @grant        none
 // @license      MIT
 // ==/UserScript==
-/* jshint esversion: 6 */
+(() => {
+  const removeShorts = () => {
+    const containers = ['ytd-grid-video-renderer', 'ytd-video-renderer'];
 
-(function () {
-    "use strict";
-    
-    let delay = 1000; //1000 = 1 sec
-    
-    setTimeout(() => {
-        let element = document.querySelectorAll("#endpoint");
-        let nonExistentFirstElement = element[2];
-        if (nonExistentFirstElement) nonExistentFirstElement.remove();
-    }, delay * 2);
-    
-    function removeShortsVideos() {
-        let output = [];
-        let regex = /\/shorts\/*/g;
-        for (let i of document.querySelectorAll("*")) {
-            if (regex.test(i.href)) {
-                output.push(i);
-                var bruh = i.parentElement;
-                bruh.parentElement.remove();
-            }
-        }
-    }
-    
-    function redirectShorts() {
-        let shortsPlayer = document.getElementById("shorts-player");
-        let shortsPlayerParent;
-        if (shortsPlayer) shortsPlayerParent = shortsPlayer.parentElement;
-        if (shortsPlayerParent != undefined || null) { }
-    }
-    
-    function removeShorts() {
-        removeShortsVideos();
-        
-        redirectShorts();
-    }
-    
-    var interval = setInterval(function () {
-        removeShorts();
-    }, delay);
+    containers.forEach((container) => {
+      const shorts = Array.from(
+        document.querySelectorAll(`${container} a[href^="/shorts"]`)
+      ).forEach((a) => {
+        const video = a.closest(container);
+        video.remove();
+      });
+    });
+  };
+
+  const observer = new MutationObserver(removeShorts);
+  observer.observe(document, {
+    childList: true,
+    subtree: true,
+  });
+
+  removeShorts();
 })();
