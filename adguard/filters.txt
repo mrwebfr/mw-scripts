@@ -9,3 +9,7 @@ creditmutuel.fr#$##cookieLB { display: none !important; }
 
 !!! Fix - WP Plugin RGPD
 @@||*/wp-content/plugins/ct-ultimate-gdpr/assets/*
+
+!!! Google Sign in
+||accounts.google.com/gsi/iframe/select
+###credential_picker_container
