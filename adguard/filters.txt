@@ -3,8 +3,7 @@
 
 
 !!! Fix - creditmutuel.fr
-creditmutuel.fr#$##cookieLB { display: none !important; }
-! creditmutuel.fr#@##cookieModal
+@@||creditmutuel.fr^$elemhide
 
 
 !!! Fix - WP Plugin RGPD
