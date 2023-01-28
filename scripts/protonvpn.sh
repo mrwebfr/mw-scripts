@@ -15,6 +15,7 @@ done
 if [ "$d_flag" = 1 ]; then
     protonvpn-cli ks --off
     protonvpn-cli d
+    protonvpn-cli s
     exit 1
 fi
 
@@ -29,14 +30,12 @@ function proton_connect {
 }
 function proton_connect_ks {
     clear
-    protonvpn-cli ks --off
     protonvpn-cli c
     protonvpn-cli ks --permanent
     protonvpn-cli s
 }
 function proton_connect_fastest {
     clear
-    protonvpn-cli ks --off
     protonvpn-cli c --fastest
     protonvpn-cli ks --permanent
     protonvpn-cli s
@@ -45,6 +44,7 @@ function proton_disconnect {
     clear
     protonvpn-cli ks --off
     protonvpn-cli d
+    protonvpn-cli s
 }
 function proton_status {
     clear
