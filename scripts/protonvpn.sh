@@ -1,5 +1,26 @@
 #!/bin/bash
 
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+        -d)
+            d_flag=1
+            ;;
+        *)
+            args+=("$1")
+            ;;
+    esac
+    shift
+done
+
+if [ "$d_flag" = 1 ]; then
+    protonvpn-cli ks --off
+    protonvpn-cli d
+    exit 1
+fi
+
+# echo "Arguments restants : ${args[@]}"
+
+
 function proton_connect {
     clear
     protonvpn-cli ks --off
