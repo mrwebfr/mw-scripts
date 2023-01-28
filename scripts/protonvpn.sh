@@ -18,9 +18,7 @@ if [ "$d_flag" = 1 ]; then
     protonvpn-cli s
     exit 1
 fi
-
 # echo "Arguments restants : ${args[@]}"
-
 
 function proton_connect {
     clear
@@ -54,10 +52,14 @@ function proton_help {
     clear
     protonvpn-cli -h
 }
+function proton_exit {
+    clear
+    protonvpn-cli s
+}
 
 clear
-read -p "
 
+read -p "
 Proton VPN :
 ----------------------------------
 1) Déconnexion 
@@ -77,6 +79,8 @@ case $choice in
     4 ) proton_connect;;
     5 ) proton_status;;
     6 ) proton_help;;
-    7 ) exit;;
+    7 ) proton_exit;;
     * ) echo "Veuillez choisir une option valide.";;
 esac
+
+exit 1
