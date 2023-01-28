@@ -54,7 +54,6 @@ function proton_help {
 }
 function proton_exit {
     clear
-    protonvpn-cli s
 }
 
 clear
