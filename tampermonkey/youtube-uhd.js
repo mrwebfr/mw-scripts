@@ -3,7 +3,7 @@
 // @namespace    https://www.mrweb.fr
 // @version      1
 // @description  Automatically play YouTube videos in UHD quality
-// @author       Ymrweb
+// @author       mrweb
 // @match        https://www.youtube.com/*
 // @grant        none
 // ==/UserScript==
