@@ -21,6 +21,12 @@
         video.remove();
       });
     });
+
+    const shortsMenu = document.querySelector('a[title="Shorts"]');
+    if (shortsMenu) {
+      const guideEntryRenderer = shortsMenu.closest('ytd-guide-entry-renderer');
+      guideEntryRenderer.remove();
+    }
   };
 
   const observer = new MutationObserver(removeShorts);
@@ -32,3 +38,4 @@
   removeShorts();
 
 })();
+
