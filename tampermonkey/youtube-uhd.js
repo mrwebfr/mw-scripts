@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Auto HD/4K
 // @namespace    https://www.mrweb.fr
-// @version      1
+// @version      1.1
 // @description  Automatically play YouTube videos in UHD quality
 // @author       mrweb
 // @match        https://www.youtube.com/*
@@ -19,7 +19,7 @@
 
         // Set the preferred playback quality to the highest available
         var availableQualities = player.getAvailableQualityLevels();
-        var highestQuality = availableQualities.indexOf('hd2160') >= 0 ? 'hd2160' : 'hd1080';
+        var highestQuality = availableQualities.includes('hd2160') ? 'hd2160' : availableQualities.includes('hd1080') ? 'hd1080' : 'hd720';
         player.setPlaybackQualityRange(highestQuality);
         player.setPlaybackQuality(highestQuality);
 
