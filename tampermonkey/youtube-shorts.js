@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove YouTube Shorts
 // @namespace    https://github.com/mrwebfr
-// @version      1.0
+// @version      1.1
 // @description  Removes YouTube Shorts Videos
 // @author       mrweb
 // @match        https://www.youtube.com/*
@@ -10,7 +10,7 @@
 // ==/UserScript==
 (() => {
   const removeShorts = () => {
-    const containers = ['ytd-grid-video-renderer', 'ytd-video-renderer'];
+    const containers = ['ytd-grid-video-renderer', 'ytd-video-renderer', 'ytd-rich-grid-row'];
 
     containers.forEach((container) => {
       const shorts = Array.from(
