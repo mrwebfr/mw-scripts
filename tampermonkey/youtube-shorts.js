@@ -9,8 +9,9 @@
 // @license      MIT
 // ==/UserScript==
 (() => {
+
   const removeShorts = () => {
-    const containers = ['ytd-grid-video-renderer', 'ytd-video-renderer', 'ytd-rich-grid-row'];
+    const containers = ['ytd-rich-item-renderer'];
 
     containers.forEach((container) => {
       const shorts = Array.from(
@@ -29,4 +30,5 @@
   });
 
   removeShorts();
+
 })();
