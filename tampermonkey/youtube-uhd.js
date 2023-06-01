@@ -5,6 +5,8 @@
 // @description  Automatically play YouTube videos in UHD quality
 // @author       mrweb
 // @match        https://www.youtube.com/*
+// @updateURL    https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-uhd.js
+// @downloadURL  https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-uhd.js
 // @grant        none
 // ==/UserScript==
 
