@@ -5,8 +5,8 @@
 // @description  Removes YouTube Shorts Videos
 // @author       mrweb
 // @match        https://www.youtube.com/*
-// @updateURL    https://github.com/mrwebfr/mw-scripts/blob/main/tampermonkey/youtube-shorts.js
-// @downloadURL  https://github.com/mrwebfr/mw-scripts/blob/main/tampermonkey/youtube-shorts.js
+// @updateURL    https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-shorts.js
+// @downloadURL  https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-shorts.js
 // @grant        none
 // @license      MIT
 // ==/UserScript==
