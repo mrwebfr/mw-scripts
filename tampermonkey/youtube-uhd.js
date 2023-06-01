@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Auto HD/4K
 // @namespace    https://www.mrweb.fr
-// @version      1.1
+// @version      1.2
 // @description  Automatically play YouTube videos in UHD quality
 // @author       mrweb
 // @match        https://www.youtube.com/*
