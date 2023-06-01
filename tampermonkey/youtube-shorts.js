@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         Remove YouTube Shorts
 // @namespace    https://github.com/mrwebfr
-// @version      1.1
+// @version      1.2
 // @description  Removes YouTube Shorts Videos
 // @author       mrweb
 // @match        https://www.youtube.com/*
+// @updateURL    https://github.com/mrwebfr/mw-scripts/blob/main/tampermonkey/youtube-shorts.js
+// @downloadURL  https://github.com/mrwebfr/mw-scripts/blob/main/tampermonkey/youtube-shorts.js
 // @grant        none
 // @license      MIT
 // ==/UserScript==
