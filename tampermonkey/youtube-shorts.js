@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove YouTube Shorts
 // @namespace    https://github.com/mrwebfr
-// @version      1.2
+// @version      1.3
 // @description  Removes YouTube Shorts Videos
 // @author       mrweb
 // @match        https://www.youtube.com/*
