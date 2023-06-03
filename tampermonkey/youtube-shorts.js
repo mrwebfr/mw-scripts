@@ -13,7 +13,7 @@
 (() => {
 
   const removeShorts = () => {
-    const containers = ['ytd-rich-item-renderer'];
+    const containers = ['ytd-rich-item-renderer','ytd-grid-video-renderer'];
 
     containers.forEach((container) => {
       const shorts = Array.from(
