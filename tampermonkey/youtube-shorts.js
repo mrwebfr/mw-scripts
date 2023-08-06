@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Remove YouTube Shorts
 // @namespace    https://github.com/mrwebfr
-// @version      1.3
-// @description  Removes YouTube Shorts Videos
+// @version      1.5
+// @description  Removes YouTube Shorts Videos and sections
 // @author       mrweb
 // @match        https://www.youtube.com/*
 // @updateURL    https://raw.githubusercontent.com/mrwebfr/mw-scripts/main/tampermonkey/youtube-shorts.js
@@ -10,17 +10,17 @@
 // @grant        none
 // @license      MIT
 // ==/UserScript==
+
 (() => {
 
-  const removeShorts = () => {
-    const containers = ['ytd-rich-item-renderer','ytd-grid-video-renderer'];
+  const removeShortsAndSections = () => {
+    const containers = ['ytd-rich-item-renderer', 'ytd-grid-video-renderer', 'ytd-video-renderer', 'ytd-reel-shelf-renderer'];
 
     containers.forEach((container) => {
-      const shorts = Array.from(
-        document.querySelectorAll(`${container} a[href^="/shorts"]`)
-      ).forEach((a) => {
-        const video = a.closest(container);
-        video.remove();
+      const elements = Array.from(document.querySelectorAll(`${container} a[href^="/shorts"]`));
+      elements.forEach((element) => {
+        const videoOrSection = element.closest(container);
+        videoOrSection.remove();
       });
     });
 
@@ -31,13 +31,12 @@
     }
   };
 
-  const observer = new MutationObserver(removeShorts);
+  const observer = new MutationObserver(removeShortsAndSections);
   observer.observe(document, {
     childList: true,
     subtree: true,
   });
 
-  removeShorts();
+  removeShortsAndSections();
 
 })();
-
